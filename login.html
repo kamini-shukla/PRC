@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login|PR</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="advanced.js"></script>
+  </head>
+  <body>
+    <section class="left-section">
+      <div id="left-cover" class="cover cover-hide">
+        <img src="solid.jpeg" alt="" />
+        <h1>Welcome!</h1>
+        <h3>Already have account ?</h3>
+        <button type="button" class="switch-btn" onclick="location.reload()">
+          Login
+        </button>
+      </div>
+      <div id="left-form" class="form fade-in-element">
+        <h1>Login</h1>
+        <div id="error"></div>
+        <form action="/" method="get">
+          <input
+            id="name"
+            type="text"
+            name="user-name"
+            class="input-box"
+            placeholder="User Name"
+          />
+          <input
+            id="password"
+            type="password"
+            name="user-pass"
+            class="input-box"
+            placeholder="**********"
+          />
+          <input type="button" name="signin-btn" class="btn1" value="Login" />
+        </form>
+      </div>
+    </section>
+
+    <section class="right-section">
+      <div id="right-cover" class="cover fade-in-element">
+        <img src="solid.jpeg" alt="" />
+        <h1>Welcome !</h1>
+        <h3>Don't have an account ?</h3>
+        <button type="button" class="switch-btn" onclick="switchSignup()">
+          SignUp
+        </button>
+      </div>
+      <div id="right-form" class="form form-hide">
+        <h1>SignUp</h1>
+        <div id="invalid"></div>
+        <form action="" method="POST">
+          <input
+            id="na"
+            type="text"
+            name="user-name"
+            class="input-box"
+            placeholder="User Name"
+          />
+          <input
+            id="ea"
+            type="email"
+            name="user-email"
+            class="input-box"
+            placeholder="Email"
+            required="@"
+          />
+          <input
+            id="pa"
+            type="password"
+            name="user-pass"
+            class="input-box"
+            placeholder="Password"
+          />
+          <input
+            id="pas"
+            type="password"
+            name="user-cpass"
+            class="input-box"
+            placeholder="Confirm Password"
+          />
+          <input type="button" name="signup-btn" class="btn2" value="Signup" />
+        </form>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
